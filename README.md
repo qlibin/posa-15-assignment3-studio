@@ -1,4 +1,4 @@
-*Use Android Studio to opem or import project*
+*Use Android Studio to open or import project*
 
 MOOC: [Programming Mobile Services for Android Handheld Systems: Concurrency by Dr. Douglas C. Schmidt](https://class.coursera.org/posaconcurrency-001)
 
