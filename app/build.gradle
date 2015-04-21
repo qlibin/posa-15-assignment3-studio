@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "21.0.1"
+
+    defaultConfig {
+        applicationId "course.examples.Networking.URL"
+        minSdkVersion 19
+        targetSdkVersion 22
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+    }
+}
+
+dependencies {
+    androidTestCompile 'com.jayway.android.robotium:robotium-solo:5.2.1'
+}
+//<groupId>com.fasterxml.jackson.core</groupId>
+//    <artifactId>jackson-databind</artifactId>
+//<version>${jackson-version}</
+
+/*
+repositories {
+    maven {
+        url 'http://repo.spring.io/milestone'
+    }
+}*/
